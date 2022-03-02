@@ -1,0 +1,269 @@
+@media (min-width: 370px) {
+
+   @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Playfair+Display:wght@400;500;600&family=Poppins:ital,wght@0,100;1,200&family=Raleway:wght@200;400&display=swap');  
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Playfair Display', serif;
+}
+
+body {
+   height: 90vh;
+}
+
+.container {
+   position: absolute;
+   top: 0px;
+   width: 100%;
+   height: 80px;
+   background-color: white;
+}
+ 
+.hamburger {
+   display: block;
+   position: relative;
+   top: 20px;
+   left: 87%;
+   width: 30px;
+   height: 35px;
+   cursor: pointer;
+   appearance: none;
+   background: none;
+   border: none; 
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+   display: block;
+   content: '';
+   width: 100%;
+   height: 2px;
+   background-color: #580000;
+   margin: 6px 0px;
+   transition: 0.9s;
+}
+
+.hamburger.is-active::before {
+   transform: rotate(-44deg) translate(-6px, 6px);
+}
+
+.hamburger.is-active::after {
+   transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.hamburger.is-active .bar {
+   opacity: 0;
+}
+
+.mobile {
+   display: block;
+   position: fixed;
+   top: 80px;
+   left: 500px;
+   width: 100%;
+   min-height: 100vh;
+   z-index: 98;
+   background-color: #580000;
+   padding-top: 120px;
+   transition: 1s;
+}
+
+.mobile.is-active{
+   left: 0px;
+   overflow: hidden;
+}
+
+.underline {
+   display: block;
+   width: 100%;
+   max-width: 200px;
+   padding: 12px 16px;
+   margin: 0 auto 16px;
+   text-align: center;
+   border-radius: 2px;
+   color: #FFC0CB;
+   text-shadow: 0px 0px 7px white;
+   text-decoration: none;
+   font-family: 'Lora', serif;
+   font-size: 28px;
+}
+
+.main {
+   background-color: #fff3ed;
+   height: 70vh;
+}
+
+h1 {
+   position: relative;
+   font-size: 40px;
+   left: 50px;
+   top: 250px;
+   letter-spacing: 1px;
+   line-height: 45px;
+   color: #333333;
+   text-shadow: 0px 0px 10px white;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 100;
+   text-transform: uppercase;
+}
+
+span {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 100;
+}
+
+.second {
+   overflow: hidden;
+   height: 230vh;
+}
+
+.services {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+   top: 100px;
+   color: #333333;
+}
+
+.services > h2 {
+   font-weight: 400;
+   font-size: 30px;
+   letter-spacing: 2px;
+}
+
+.services > .service-info {
+   font-size: 18px;
+   word-spacing: 2px;
+   letter-spacing: 1px;
+   line-height: 29px;
+   text-align: left;
+   width: 280px;
+   padding-top: 5px;
+   font-weight: 400;
+}
+
+.cards-holder {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top: 150px;
+}
+
+.cards {
+   display: grid;
+   position: relative;
+   grid-template-columns: repeat(0, 255px);
+   grid-auto-rows: auto;
+   gap: 30px;
+}
+
+.card {
+   width: 275px;
+   height: 350px;
+   background-color: pink;
+   border-radius: 7px;
+}
+
+.card-contents {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   position: relative;
+   top: 200px;
+}
+
+.icon {
+   position: absolute;
+   bottom: 150px;
+}
+
+h3 {
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.info1,.info2,.info3, .info4 {
+   font-size: 17px;
+   width: 250px;
+   line-height: 25px;
+   padding-top: 5px;
+}
+
+.third {
+   height: 100vh;
+   background-color: #fff3ed;
+}
+
+.voucher {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+   position: relative;
+   top: 100px;
+}
+
+ h4 {
+   font-size: 28px;
+   font-weight: 400;
+   letter-spacing: 2px;
+   padding-bottom: 10px;
+}
+
+.voucher-info {
+   width: 360px;
+   font-size: 16px;
+   word-spacing: 3px;
+   letter-spacing: 1px;
+   line-height: 35px;
+}
+
+.poukaz {
+   border-radius: 5px;
+   width: 355px;
+   position: relative;
+   top: 40px;
+}
+
+footer {
+   position: absolute;
+   width: 100%;
+   height: 85px;
+   background-color: rgb(8, 8, 8);
+   border-top: 1px #FFC0CB solid;
+}
+
+.footer-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; 
+   text-align: center;
+   color: #FFC0CB;
+   position: relative;
+   top: 20px;
+ } 
+
+
+ .fb-icon {
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    background: none;
+    border: none;
+    right: 15px;
+    bottom: 20px;
+    font-size: 20px;
+    color: white;
+ }
+
+ .fb-link {color: white;}
+
+}
